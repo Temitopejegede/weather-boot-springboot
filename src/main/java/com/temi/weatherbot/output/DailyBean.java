@@ -1,0 +1,18 @@
+package com.temi.weatherbot.output;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Data
+public class DailyBean {
+
+    @JsonProperty("daily")
+    private String[] time;
+
+    @JsonProperty("temperature_2m_max")
+    private String[] temperature_2m_max;
+}
